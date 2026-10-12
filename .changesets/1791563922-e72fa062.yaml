@@ -1,0 +1,10 @@
+id: 1791563922-e72fa062
+features:
+    - serverEvents
+targets:
+    - cli
+type: fix
+bump: patch
+description: an output_format saved in the CLI config file (for example by configure) is now treated as a default rather than an explicit choice, so it no longer disables the stream projection or the complete-response selection for --jq on default-streaming commands; pass --output-format or set the output format env var for per-event frames
+author: ThomasRooney
+date: "2026-10-09"
