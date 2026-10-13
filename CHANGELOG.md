@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.948.9] - 2026-10-13
+### :bug: Bug Fixes
+- [`71bf148`](https://github.com/speakeasy-api/openapi-generation/commit/71bf1481389033f633756f7a451da55617dda8dc) - **go,cli**: fail a truncated event stream and keep its metadata ([#105](https://github.com/speakeasy-api/openapi-generation/pull/105)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
+
+
 ## [v2.948.8] - 2026-10-13
 ### :bug: Bug Fixes
 - [`4d93dd9`](https://github.com/speakeasy-api/openapi-generation/commit/4d93dd936b4df36cb8c1731b6ec74e71d95c56f2) - **cli**: reject a malformed --jq expression before any request is sent ([#104](https://github.com/speakeasy-api/openapi-generation/pull/104)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
@@ -20572,3 +20577,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.948.6]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.5...v2.948.6
 [v2.948.7]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.6...v2.948.7
 [v2.948.8]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.7...v2.948.8
+[v2.948.9]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.8...v2.948.9
