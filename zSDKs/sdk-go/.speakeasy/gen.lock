@@ -48,11 +48,11 @@ features:
     retries: 2.84.6
     sdkHooks: 0.3.1
     serverEvents: 0.1.10
-    serverEventsSentinels: 0.1.0
+    serverEventsSentinels: 0.1.1
     serverIDs: 2.81.1
     stringNumberFormats: 0.2.2
     tests: 0.16.8
-    unions: 2.87.12
+    unions: 2.87.13
     uploadStreams: 0.1.0
     webhooks: 1.0.0
 trackedFiles:

@@ -26,7 +26,7 @@ const supportedFeatures = {
   typeOverrides: "0.0.0",
   errors: "0.2.1",
   errorUnions: "0.0.0",
-  unions: "0.1.2",
+  unions: "0.1.3",
   sliceUnions: "0.0.0",
   multiLevelTagging: "0.0.0",
   bigint: "0.0.0",
@@ -49,7 +49,7 @@ const supportedFeatures = {
   transformJq: "0.0.0",
   jsonlResponses: "0.0.1",
   customCodeRegions: "0.0.1",
-  cliCommands: "0.1.19",
+  cliCommands: "0.1.20",
 };
 
 // @ts-ignore
