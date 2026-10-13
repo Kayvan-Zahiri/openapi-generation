@@ -45,7 +45,7 @@ features:
     nameOverrides: 2.81.4
     nullables: 0.1.1
     oauth2ClientCredentials: 1.1.6
-    openEnums: 0.1.3
+    openEnums: 0.1.4
     operationTimeout: 0.2.1
     pagination: 2.83.2
     reactQueryHooks: 0.3.0

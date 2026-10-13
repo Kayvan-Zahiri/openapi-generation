@@ -38,7 +38,7 @@ features:
     nameOverrides: 2.81.5
     nullables: 0.1.1
     oauth2ClientCredentials: 1.1.7
-    openEnums: 0.2.0
+    openEnums: 0.2.1
     pagination: 1.0.4
     retries: 0.1.4
     sdkHooks: 1.2.0

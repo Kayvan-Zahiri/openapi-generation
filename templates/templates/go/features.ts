@@ -49,7 +49,7 @@ const supportedFeatures = {
   globalSecurityFlattening: "0.1.0",
   globalSecurityCallbacks: "0.1.0",
   intellisenseMarkdownSupport: "0.1.0",
-  openEnums: "0.1.0",
+  openEnums: "0.1.1",
   allowReserved: "0.2.0",
   operationPolling: "0.3.2",
   operationTimeout: "0.2.0",

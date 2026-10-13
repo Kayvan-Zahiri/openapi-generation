@@ -32,7 +32,7 @@ features:
     nameOverrides: 2.81.4
     nullables: 0.1.0
     oauth2ClientCredentials: 2.1.7
-    openEnums: 0.1.1
+    openEnums: 0.1.2
     operationTimeout: 0.1.0
     pagination: 0.1.1
     responseFormat: 0.1.0

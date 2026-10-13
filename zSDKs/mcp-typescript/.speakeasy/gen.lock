@@ -34,7 +34,7 @@ features:
     mockServer: 0.0.3
     nameOverrides: 0.1.2
     nullables: 0.1.0
-    openEnums: 0.1.0
+    openEnums: 0.1.1
     operationTimeout: 0.1.0
     responseFormat: 0.1.1
     retries: 0.1.2

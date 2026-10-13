@@ -51,7 +51,7 @@ const supportedFeatures = {
   nullables: "1.0.2",
   globalSecurityFlattening: "1.0.0",
   globalSecurityCallbacks: "1.0.0",
-  openEnums: "1.0.4",
+  openEnums: "1.0.5",
   openDiscriminatedUnions: "0.1.0",
   uploadStreams: "1.0.3",
   multipartFileContentType: "1.0.0",

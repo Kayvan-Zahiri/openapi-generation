@@ -46,7 +46,7 @@ const supportedFeatures = {
   transformJq: "0.0.1",
   operationPolling: "0.3.1",
   modelNamespaces: "0.1.0",
-  openEnums: "0.1.0",
+  openEnums: "0.1.1",
   formatBinary: "0.2.0",
   contentMediaTypeApplicationJSON: "0.1.1",
   allowReserved: "0.2.0",

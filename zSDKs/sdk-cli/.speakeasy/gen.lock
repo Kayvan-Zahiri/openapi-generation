@@ -33,7 +33,7 @@ features:
     mockServer: 0.0.1
     nameOverrides: 0.0.0
     oauth2ClientCredentials: 0.0.1
-    openEnums: 0.0.0
+    openEnums: 0.0.1
     pagination: 0.2.0
     responseFormat: 0.1.2
     retries: 0.1.1

@@ -26,7 +26,7 @@ const supportedFeatures = {
   nullables: "0.1.0",
   oauth2ClientCredentials: "1.1.8",
   oauth2Password: "0.1.2",
-  openEnums: "0.1.0",
+  openEnums: "0.1.1",
   operationTimeout: "0.1.0",
   responseFormat: "0.1.1",
   retries: "0.1.2",

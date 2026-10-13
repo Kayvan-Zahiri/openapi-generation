@@ -39,7 +39,7 @@ features:
     nameOverrides: 2.81.4
     nullables: 0.1.1
     oauth2ClientCredentials: 1.1.5
-    openEnums: 0.2.0
+    openEnums: 0.2.1
     pagination: 0.2.12
     responseFormat: 0.0.4
     retries: 0.0.4

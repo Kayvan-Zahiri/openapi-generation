@@ -39,7 +39,7 @@ const supportedFeatures = {
   multiLevelTagging: "0.1.0",
   additionalProperties: "0.1.1",
   modelNamespaces: "0.1.3",
-  openEnums: "0.1.1",
+  openEnums: "0.1.2",
   tests: "0.1.5",
   mockServer: "0.1.4",
   oauth2ClientCredentials: "2.1.7",

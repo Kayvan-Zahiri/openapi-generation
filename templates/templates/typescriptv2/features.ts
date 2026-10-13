@@ -8,7 +8,7 @@ const supportedFeatures = {
   methodServerURLs: "2.82.2",
   globals: "2.82.2",
   enums: "2.83.2",
-  openEnums: "0.1.3",
+  openEnums: "0.1.4",
   allowReserved: "0.2.0",
   openDiscriminatedUnions: "0.1.0",
   serverIDs: "2.81.2",

@@ -11,7 +11,7 @@ const supportedFeatures = {
   methodServerURLs: "0.0.0",
   globals: "0.1.1",
   enums: "0.0.2",
-  openEnums: "0.0.0",
+  openEnums: "0.0.1",
   serverIDs: "0.0.0",
   nameOverrides: "0.0.0",
   includes: "0.0.0",

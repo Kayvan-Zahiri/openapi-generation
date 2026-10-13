@@ -44,7 +44,7 @@ const supportedFeatures = {
   errorUnions: "0.1.1",
   sliceUnions: "0.1.0",
   customSecuritySchemes: "0.1.0",
-  openEnums: "0.2.0",
+  openEnums: "0.2.1",
   allowReserved: "0.2.0",
   serverEvents: "0.3.0",
   serverEventsSentinels: "0.2.0",

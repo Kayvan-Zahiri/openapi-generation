@@ -45,7 +45,7 @@ const supportedFeatures = {
   tests: "0.9.6",
   allowReserved: "0.1.1",
   oauth2Password: "0.1.4",
-  openEnums: "0.2.0",
+  openEnums: "0.2.1",
   mockServer: "0.1.4",
   customSecuritySchemes: "0.2.0",
   jsonlResponses: "0.2.1",
