@@ -316,6 +316,10 @@ func (t Test) String() string {
         return "event-stream-text-data"
     case TestEventStreamTimeoutStillBoundsSlowStream:
         return "event-stream-timeout-still-bounds-slow-stream"
+    case TestEventStreamTruncatedBeforeSentinel:
+        return "event-stream-truncated-before-sentinel"
+    case TestEventStreamTruncatedBeforeSentinelIsConnectionError:
+        return "event-stream-truncated-before-sentinel-is-connection-error"
     case TestEventStreamUndiscriminatedErrorShapedVariantIsData:
         return "event-stream-undiscriminated-error-shaped-variant-is-data"
     case TestEventStreamUnionEventsRenderWireShape:
@@ -562,6 +566,8 @@ func (t Test) String() string {
         return "open-enums-round-trip-string-union"
     case TestOpenUnionEmbedded:
         return "open-union-embedded"
+    case TestOpenUnionInvalidJSONIsAnError:
+        return "open-union-invalid-json-is-an-error"
     case TestOpenUnionInvalidPayload:
         return "open-union-invalid-payload"
     case TestOpenUnionKnownDiscInvalidSchema:
@@ -1822,6 +1828,10 @@ func TestFromString(s string) Test {
         return TestEventStreamTextData
     case "event-stream-timeout-still-bounds-slow-stream":
         return TestEventStreamTimeoutStillBoundsSlowStream
+    case "event-stream-truncated-before-sentinel":
+        return TestEventStreamTruncatedBeforeSentinel
+    case "event-stream-truncated-before-sentinel-is-connection-error":
+        return TestEventStreamTruncatedBeforeSentinelIsConnectionError
     case "event-stream-undiscriminated-error-shaped-variant-is-data":
         return TestEventStreamUndiscriminatedErrorShapedVariantIsData
     case "event-stream-union-events-render-wire-shape":
@@ -2068,6 +2078,8 @@ func TestFromString(s string) Test {
         return TestOpenEnumsRoundTripStringUnion
     case "open-union-embedded":
         return TestOpenUnionEmbedded
+    case "open-union-invalid-json-is-an-error":
+        return TestOpenUnionInvalidJSONIsAnError
     case "open-union-invalid-payload":
         return TestOpenUnionInvalidPayload
     case "open-union-known-disc-invalid-schema":
@@ -3171,6 +3183,8 @@ var testList = []Test{
     TestEventStreamStayOpenSentinel,
     TestEventStreamTextData,
     TestEventStreamTimeoutStillBoundsSlowStream,
+    TestEventStreamTruncatedBeforeSentinel,
+    TestEventStreamTruncatedBeforeSentinelIsConnectionError,
     TestEventStreamUndiscriminatedErrorShapedVariantIsData,
     TestEventStreamUnionEventsRenderWireShape,
     TestEventStreamUnionWithStandaloneComments,
@@ -3294,6 +3308,7 @@ var testList = []Test{
     TestOpenEnumsRoundTrip,
     TestOpenEnumsRoundTripStringUnion,
     TestOpenUnionEmbedded,
+    TestOpenUnionInvalidJSONIsAnError,
     TestOpenUnionInvalidPayload,
     TestOpenUnionKnownDiscInvalidSchema,
     TestOpenUnionKnownVariant,
