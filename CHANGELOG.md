@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.948.6] - 2026-10-13
+### :bug: Bug Fixes
+- [`08ed0ad`](https://github.com/speakeasy-api/openapi-generation/commit/08ed0ade3f8c19e2e7ded018c6f63bb09c517ba5) - **all**: open single-value response enums behind fixes.openSingleValueEnumsOct2026 ([#102](https://github.com/speakeasy-api/openapi-generation/pull/102)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
+
+
 ## [v2.948.5] - 2026-10-12
 ### :bug: Bug Fixes
 - [`daefd5d`](https://github.com/speakeasy-api/openapi-generation/commit/daefd5dc3afbefb9222a49907212723b6ff8e666) - **cli**: never treat a saved output format as explicit ([#98](https://github.com/speakeasy-api/openapi-generation/pull/98)) *(commit by [@ThomasRooney](https://github.com/ThomasRooney))*
@@ -20554,3 +20559,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.948.3]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.2...v2.948.3
 [v2.948.4]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.3...v2.948.4
 [v2.948.5]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.4...v2.948.5
+[v2.948.6]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.5...v2.948.6
