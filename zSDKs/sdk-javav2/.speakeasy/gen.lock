@@ -6,7 +6,7 @@ management:
   speakeasyVersion: internal
   generationVersion: internal
   releaseVersion: 0.0.1
-  configChecksum: 77c15c3db071a327a9cd176b39a26aaf
+  configChecksum: 4bb8b425a355582af6c30db9f903cbc2
 features:
   java:
     acceptHeaders: 2.81.2

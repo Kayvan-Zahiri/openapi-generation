@@ -183,6 +183,7 @@ generation:
     sharedErrorComponentsApr2025: true
     sharedNestedComponentsJan2026: true
     nameOverrideFeb2026: true
+    openSingleValueEnumsOct2026: true
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
@@ -1222,6 +1223,7 @@ generation:
     sharedErrorComponentsApr2025: true
     sharedNestedComponentsJan2026: true
     nameOverrideFeb2026: true
+    openSingleValueEnumsOct2026: true
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
@@ -2313,6 +2315,7 @@ generation:
     sharedErrorComponentsApr2025: true
     sharedNestedComponentsJan2026: true
     nameOverrideFeb2026: true
+    openSingleValueEnumsOct2026: true
   auth:
     oAuth2ClientCredentialsEnabled: true
     oAuth2PasswordEnabled: true
