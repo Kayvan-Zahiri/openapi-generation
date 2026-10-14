@@ -5,6 +5,6 @@ targets:
     - cli
 type: fix
 bump: patch
-description: keep a non-media suffix such as .v1 in an artifact --out path instead of replacing it with the returned file extension
+description: write an artifact --out path exactly as given; a mismatched media extension is reported instead of rewritten, and a non-media suffix such as .v1 is kept
 author: AshGodfrey
 date: "2026-10-14"
