@@ -264,7 +264,7 @@ trackedFiles:
   internal/output/agentmode.go:
     last_write_checksum: sha1:5b8c409dde2bd954b9d96e158d5e651c77d1ef10
   internal/output/artifact.go:
-    last_write_checksum: sha1:558fc52812029e5846233ad42188a118e8ffadae
+    last_write_checksum: sha1:80a30b72e56efdd0dc0c16f0734a1f78ba92d1b6
   internal/output/artifact_test.go:
     last_write_checksum: sha1:ae6f2716d40191d5a46f0f0b2d00802be46e878b
   internal/output/async.go:

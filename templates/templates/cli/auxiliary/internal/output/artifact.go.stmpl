@@ -310,7 +310,8 @@ func writeArtifact(outFlag string, payload []byte, mimeType string, cfg *artifac
 var artifactMediaExtensions = map[string]string{
 	"png": "png", "jpg": "jpg", "jpeg": "jpg", "gif": "gif", "webp": "webp", "bmp": "bmp",
 	"tif": "tif", "tiff": "tif", "heic": "heic", "heif": "heif", "avif": "avif", "svg": "svg",
-	"wav": "wav", "mp3": "mp3", "ogg": "ogg", "oga": "ogg", "opus": "opus", "m4a": "m4a",
+	"ico": "ico",
+	"wav": "wav", "wave": "wav", "mp3": "mp3", "ogg": "ogg", "oga": "ogg", "opus": "opus", "m4a": "m4a",
 	"aac": "aac", "flac": "flac", "pcm": "pcm", "l16": "l16",
 	"mp4": "mp4", "m4v": "m4v", "webm": "webm", "mov": "mov", "mpg": "mpg", "mpeg": "mpg",
 	"avi": "avi", "mkv": "mkv",
