@@ -149,20 +149,28 @@ func TestArtifact_OutExtensionFollowsReturnedMime(t *testing.T) {
 
 func TestArtifact_OutWithoutExtensionAppendsSilently(t *testing.T) {
 	server := artifactTestServer(t, `{"id":"task-123","status":"completed","steps":[{"content":[{"type":"image","data":"YXJ0aWZhY3QtYnl0ZXM=","mime_type":"image/png"}]}]}`)
-	dir := t.TempDir()
-	h := NewCLITestHarness(t)
-	target := filepath.Join(dir, "photo")
+	for _, name := range []string{"photo", "photo.v1", "release-1.2"} {
+		t.Run(name, func(t *testing.T) {
+			dir := t.TempDir()
+			h := NewCLITestHarness(t)
+			target := filepath.Join(dir, name)
 
-	require.NoError(t, runArtifact(t, h, server.URL, dir, "--out", target))
-	assert.Equal(t, target+".png", strings.TrimSpace(h.GetStdout()))
-	assert.NotContains(t, h.GetStderr(), "Note: wrote", "plain extension appends are not rewrites")
+			require.NoError(t, runArtifact(t, h, server.URL, dir, "--out", target))
+			printed := strings.TrimSpace(h.GetStdout())
+			assert.Equal(t, target+".png", printed)
+			written, err := os.ReadFile(printed)
+			require.NoError(t, err)
+			assert.Equal(t, artifactTestBytes, string(written))
+			assert.NotContains(t, h.GetStderr(), "Note: wrote", "plain extension appends are not rewrites")
+		})
+	}
 }
 
 func TestArtifact_ExtensionRewriteNoteIsSilentInAgentMode(t *testing.T) {
 	server := artifactTestServer(t, `{"id":"task-123","status":"completed","steps":[{"content":[{"type":"image","data":"YXJ0aWZhY3QtYnl0ZXM=","mime_type":"image/png"}]}]}`)
 	dir := t.TempDir()
 	h := NewCLITestHarness(t)
-	target := filepath.Join(dir, "photo.wrong")
+	target := filepath.Join(dir, "photo.jpg")
 
 	// Machine modes keep stderr silent on success; the final path is already
 	// the deliverable on stdout, so the human rewrite note is suppressed.

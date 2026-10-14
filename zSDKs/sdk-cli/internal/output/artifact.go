@@ -302,23 +302,39 @@ func writeArtifact(outFlag string, payload []byte, mimeType string, cfg *artifac
 	if err := artifactAtomicReplace(finalPath, payload); err != nil {
 		return "", false, err
 	}
-	rewritten := filepath.Ext(outFlag) != "" && finalPath != outFlag
+	rewritten := artifactMediaExtension(outFlag) != "" && finalPath != outFlag
 	return finalPath, rewritten, nil
 }
 
+var artifactMediaExtensions = map[string]bool{
+	"png": true, "jpg": true, "jpeg": true, "gif": true, "webp": true, "bmp": true,
+	"tif": true, "tiff": true, "heic": true, "heif": true, "avif": true, "svg": true,
+	"wav": true, "mp3": true, "ogg": true, "oga": true, "opus": true, "m4a": true,
+	"aac": true, "flac": true, "pcm": true, "l16": true,
+	"mp4": true, "m4v": true, "webm": true, "mov": true, "mpg": true, "mpeg": true,
+	"avi": true, "mkv": true,
+}
+
+func artifactMediaExtension(path string) string {
+	current := strings.TrimPrefix(strings.ToLower(filepath.Ext(path)), ".")
+	if !artifactMediaExtensions[current] {
+		return ""
+	}
+	return current
+}
+
 func artifactRewriteExtension(path, ext string) string {
-	if ext == "" {
+	if ext == "" || strings.EqualFold(filepath.Ext(path), "."+ext) {
 		return path
 	}
-	currentExt := filepath.Ext(path)
-	current := strings.TrimPrefix(strings.ToLower(currentExt), ".")
+	current := artifactMediaExtension(path)
 	if current == ext || (current == "jpeg" && ext == "jpg") || (current == "jpg" && ext == "jpeg") {
 		return path
 	}
 	if current == "" {
 		return path + "." + ext
 	}
-	return strings.TrimSuffix(path, currentExt) + "." + ext
+	return path[:len(path)-len(current)] + ext
 }
 
 func writeArtifactDefault(dir string, payload []byte, ext string, cfg *artifactConfig) (string, error) {

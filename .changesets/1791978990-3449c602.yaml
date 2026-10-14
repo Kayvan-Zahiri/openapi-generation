@@ -1,0 +1,10 @@
+id: 1791978990-3449c602
+features:
+    - cliCommands
+targets:
+    - cli
+type: fix
+bump: patch
+description: keep a non-media suffix such as .v1 in an artifact --out path instead of replacing it with the returned file extension
+author: AshGodfrey
+date: "2026-10-14"
