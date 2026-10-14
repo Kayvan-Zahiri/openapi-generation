@@ -175,10 +175,12 @@ func TestArtifact_ExtensionMismatchIsSilentInAgentMode(t *testing.T) {
 	h := NewCLITestHarness(t)
 	target := filepath.Join(dir, "photo.jpg")
 
-	require.NoError(t, runArtifact(t, h, server.URL, dir, "--agent-mode", "--out", target))
+	require.NoError(t, runArtifact(t, h, server.URL, dir, "--agent-mode", "--output-format", "json", "--out", target))
 	assert.Empty(t, strings.TrimSpace(h.GetStderr()), "machine-mode success must keep stderr silent")
-	assert.Contains(t, h.GetStdout(), "photo.jpg")
-	assert.Contains(t, h.GetStdout(), "extension_mismatch")
+	var envelope map[string]any
+	require.NoError(t, json.Unmarshal([]byte(h.GetStdout()), &envelope))
+	assert.Equal(t, target, envelope["path"])
+	assert.Equal(t, true, envelope["extension_mismatch"])
 	_, err := os.Stat(target)
 	assert.NoError(t, err)
 }

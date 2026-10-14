@@ -432,6 +432,7 @@ func artifactExtension(kind, mimeType string) string {
 	case "video/mpeg":
 		return "mpg"
 	}
+	sub, _, _ = strings.Cut(strings.TrimPrefix(sub, "x-"), "+")
 	var b strings.Builder
 	for _, r := range sub {
 		if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') {
