@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.948.10] - 2026-10-15
+### :wrench: Chores
+- [`9c7191f`](https://github.com/speakeasy-api/openapi-generation/commit/9c7191f35f7d3b4da952c87318e1701073db4bd2) - prewarm WASM formatters at generation start instead of process init ([#108](https://github.com/speakeasy-api/openapi-generation/pull/108)) *(commit by [@TristanSpeakEasy](https://github.com/TristanSpeakEasy))*
+
+
 ## [v2.948.9] - 2026-10-13
 ### :bug: Bug Fixes
 - [`71bf148`](https://github.com/speakeasy-api/openapi-generation/commit/71bf1481389033f633756f7a451da55617dda8dc) - **go,cli**: fail a truncated event stream and keep its metadata ([#105](https://github.com/speakeasy-api/openapi-generation/pull/105)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
@@ -20578,3 +20583,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.948.7]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.6...v2.948.7
 [v2.948.8]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.7...v2.948.8
 [v2.948.9]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.8...v2.948.9
+[v2.948.10]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.9...v2.948.10
