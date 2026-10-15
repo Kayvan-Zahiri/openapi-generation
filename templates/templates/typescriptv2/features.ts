@@ -64,7 +64,7 @@ const supportedFeatures = {
   enumUnions: "0.1.0",
   reactQueryHooks: "0.3.0",
   customCodeRegions: "0.1.1",
-  mcpServer: "0.9.4",
+  mcpServer: "1.0.0",
   jsonlResponses: "0.2.1",
   examplesDirectory: "0.2.1",
   modelNamespaces: "0.1.1",
