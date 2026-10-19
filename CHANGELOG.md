@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.949.1] - 2026-10-19
+### :bug: Bug Fixes
+- [`7a70797`](https://github.com/speakeasy-api/openapi-generation/commit/7a7079723ed473db89e82198fa1ad3f737da2973) - **cli**: move command suggestions into hints and drop the dry-run hint on CLI-raised validation errors ([#114](https://github.com/speakeasy-api/openapi-generation/pull/114)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
+
+
 ## [v2.949.0] - 2026-10-15
 ### :bee: New Features
 - [`894473a`](https://github.com/speakeasy-api/openapi-generation/commit/894473a8426bb78acbcc06a0f1db43d07525e74e) - **mcp**: upgrade generated servers to SDK v2 ([#84](https://github.com/speakeasy-api/openapi-generation/pull/84)) *(commit by [@ThomasRooney](https://github.com/ThomasRooney))*
@@ -20596,3 +20601,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.948.10]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.9...v2.948.10
 [v2.948.11]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.10...v2.948.11
 [v2.949.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.11...v2.949.0
+[v2.949.1]: https://github.com/speakeasy-api/openapi-generation/compare/v2.949.0...v2.949.1
