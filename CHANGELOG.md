@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.950.1] - 2026-10-19
+### :bug: Bug Fixes
+- [`4604e87`](https://github.com/speakeasy-api/openapi-generation/commit/4604e87bb475b5fc0f4f83540f6a7e469a542c14) - **go,cli**: read body-less success responses before the timeout is cancelled ([#117](https://github.com/speakeasy-api/openapi-generation/pull/117)) *(commit by [@2ynn](https://github.com/2ynn))*
+
+
 ## [v2.950.0] - 2026-10-19
 ### :bee: New Features
 - [`38dc6ac`](https://github.com/speakeasy-api/openapi-generation/commit/38dc6aca95b0a78b84cab99c117a6a9566192594) - **cli**: report a projected stream's status and resume fields when it ends incomplete ([#107](https://github.com/speakeasy-api/openapi-generation/pull/107)) *(commit by [@AshGodfrey](https://github.com/AshGodfrey))*
@@ -20608,3 +20613,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.949.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.948.11...v2.949.0
 [v2.949.1]: https://github.com/speakeasy-api/openapi-generation/compare/v2.949.0...v2.949.1
 [v2.950.0]: https://github.com/speakeasy-api/openapi-generation/compare/v2.949.1...v2.950.0
+[v2.950.1]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.0...v2.950.1
