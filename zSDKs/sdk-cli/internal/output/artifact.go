@@ -432,6 +432,8 @@ func artifactExtension(kind, mimeType string) string {
 		return "mov"
 	case "video/mpeg":
 		return "mpg"
+	case "image/x-icon", "image/vnd.microsoft.icon":
+		return "ico"
 	}
 	sub, _, _ = strings.Cut(strings.TrimPrefix(sub, "x-"), "+")
 	var b strings.Builder

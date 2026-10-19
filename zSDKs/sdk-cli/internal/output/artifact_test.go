@@ -115,11 +115,13 @@ func TestFindArtifactItemSelectsTrailingBlockWithoutData(t *testing.T) {
 
 func TestArtifactExtensionNormalizesSubtype(t *testing.T) {
 	cases := map[string]string{
-		"image/png":         "png",
-		"image/svg+xml":     "svg",
-		"image/webp; q=0.9": "webp",
-		"audio/x-flac":      "flac",
-		"audio/x-wav":       "wav",
+		"image/png":                "png",
+		"image/svg+xml":            "svg",
+		"image/webp; q=0.9":        "webp",
+		"audio/x-flac":             "flac",
+		"audio/x-wav":              "wav",
+		"image/x-icon":             "ico",
+		"image/vnd.microsoft.icon": "ico",
 	}
 	for mime, want := range cases {
 		kind, _, _ := strings.Cut(mime, "/")
