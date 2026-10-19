@@ -47,7 +47,7 @@ features:
     responseFormat: 0.1.2
     retries: 2.84.6
     sdkHooks: 0.3.1
-    serverEvents: 0.1.10
+    serverEvents: 0.1.11
     serverEventsSentinels: 0.1.1
     serverIDs: 2.81.1
     stringNumberFormats: 0.2.2

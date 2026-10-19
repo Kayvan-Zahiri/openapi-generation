@@ -31,7 +31,7 @@ const supportedFeatures = {
   additionalProperties: "0.1.3",
   downloadStreams: "0.1.3",
   tests: "0.16.8",
-  serverEvents: "0.1.10",
+  serverEvents: "0.1.11",
   serverEventsSentinels: "0.1.1",
   oauth2ClientCredentials: "1.1.6",
   oauth2Password: "0.1.3",
