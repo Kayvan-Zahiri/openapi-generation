@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.950.5] - 2026-10-20
+### :bug: Bug Fixes
+- [`67f55b4`](https://github.com/speakeasy-api/openapi-generation/commit/67f55b4751abfa15abcc651886f4e715c2a56b5f) - **cli**: list the flags each command registers in --usage ([#122](https://github.com/speakeasy-api/openapi-generation/pull/122)) *(commit by [@2ynn](https://github.com/2ynn))*
+
+
 ## [v2.950.4] - 2026-10-20
 ### :bug: Bug Fixes
 - [`c834e12`](https://github.com/speakeasy-api/openapi-generation/commit/c834e12bcf56a723790f94ecf9374c1905fbcb77) - **python**: keep base64 input mode on shared components ([#124](https://github.com/speakeasy-api/openapi-generation/pull/124)) *(commit by [@2ynn](https://github.com/2ynn))*
@@ -20632,3 +20637,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v2.950.2]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.1...v2.950.2
 [v2.950.3]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.2...v2.950.3
 [v2.950.4]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.3...v2.950.4
+[v2.950.5]: https://github.com/speakeasy-api/openapi-generation/compare/v2.950.4...v2.950.5
